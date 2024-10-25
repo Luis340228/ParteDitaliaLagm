@@ -22,12 +22,14 @@ ejecutaServicio(function () {
 
 
  $pdo = Bd::pdo();
- insert(pdo: $pdo, into: PASATIEMPO, values: [PAS_NOMBRE => $nombre]);
+ insert(pdo: $pdo, into: PASATIEMPO, values: [PAS_NOMBRE => $nombre, PAS_DESCRIPCION => $descripcion, PAS_ESTADO => $estado]);
  $id = $pdo->lastInsertId();
 
  $encodeId = urlencode($id);
  devuelveCreated("/srv/pasatiempo.php?id=$encodeId", [
   "id" => ["value" => $id],
   "nombre" => ["value" => $nombre],
+  "desc" => ["value" => $descripcion],
+  "estado" => ["value" => $estado]
  ]);
 });

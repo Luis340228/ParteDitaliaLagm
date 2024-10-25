@@ -10,7 +10,7 @@ function validaDescripcion(false|string $descripcion)
   throw new ProblemDetails(
    status: BAD_REQUEST,
    title: "Falta la descripción.",
-   type: "/error/faltadescripcion.html",
+   type: "/error/faltadesc.html",
    detail: "La solicitud no tiene el valor de descripción."
   );
 
