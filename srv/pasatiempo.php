@@ -7,7 +7,7 @@ require_once __DIR__ . "/../lib/php/selectFirst.php";
 require_once __DIR__ . "/../lib/php/ProblemDetails.php";
 require_once __DIR__ . "/../lib/php/devuelveJson.php";
 require_once __DIR__ . "/Bd.php";
-require_once __DIR__ . "/TABLA_PASATIEMPO.php";
+require_once __DIR__ . "/TABLA_TALLA.php";
 
 ejecutaServicio(function () {
 
