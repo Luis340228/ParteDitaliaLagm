@@ -22,7 +22,7 @@ ejecutaServicio(function () {
 
 
  $pdo = Bd::pdo();
- insert(pdo: $pdo, into: PASATIEMPO, values: [PAS_NOMBRE => $nombre, PAS_DESCRIPCION => $descripcion, PAS_ESTADO => $estado]);
+ insert(pdo: $pdo, into: TALLA, values: [TALL_NOMBRE => $nombre, TALL_DESCRIPCION => $descripcion, TALL_ESTADO => $estado]);
  $id = $pdo->lastInsertId();
 
  $encodeId = urlencode($id);
