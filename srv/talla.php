@@ -20,9 +20,9 @@ ejecutaServicio(function () {
   $idHtml = htmlentities($id);
   throw new ProblemDetails(
    status: NOT_FOUND,
-   title: "Pasatiempo no encontrado.",
-   type: "/error/pasatiemponoencontrado.html",
-   detail: "No se encontró ningún pasatiempo con el id $idHtml.",
+   title: "Talla no encontrada.",
+   type: "/error/tallanoencontrado.html",
+   detail: "No se encontró ninguna talla con el id $idHtml.",
   );
  }
 
