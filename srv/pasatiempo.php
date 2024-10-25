@@ -29,5 +29,7 @@ ejecutaServicio(function () {
  devuelveJson([
   "id" => ["value" => $id],
   "nombre" => ["value" => $modelo[TALL_NOMBRE]],
+  "descripcion" => ["value" => $modelo[TALL_DESCRIPCION]],
+  "estado" => ["value" => $modelo[TALL_ESTADO]],
  ]);
 });
