@@ -18,9 +18,9 @@ ejecutaServicio(function () {
 
  update(
   pdo: Bd::pdo(),
-  table: PASATIEMPO,
-  set: [PAS_NOMBRE => $nombre],
-  where: [PAS_ID => $id]
+  table: TALLA,
+  set: [TALL_NOMBRE => $nombre],
+  where: [TALL_ID => $id]
  );
 
  devuelveJson([

@@ -9,6 +9,6 @@ require_once __DIR__ . "/TABLA_PASATIEMPO.php";
 
 ejecutaServicio(function () {
  $id = recuperaIdEntero("id");
- delete(pdo: Bd::pdo(), from: PASATIEMPO, where: [PAS_ID => $id]);
+ delete(pdo: Bd::pdo(), from: TALLA, where: [TALL_ID => $id]);
  devuelveNoContent();
 });

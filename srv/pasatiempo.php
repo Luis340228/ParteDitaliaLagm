@@ -14,7 +14,7 @@ ejecutaServicio(function () {
  $id = recuperaIdEntero("id");
 
  $modelo =
-  selectFirst(pdo: Bd::pdo(),  from: PASATIEMPO,  where: [PAS_ID => $id]);
+  selectFirst(pdo: Bd::pdo(),  from: TALLA,  where: [TALL_ID => $id]);
 
  if ($modelo === false) {
   $idHtml = htmlentities($id);
@@ -28,6 +28,6 @@ ejecutaServicio(function () {
 
  devuelveJson([
   "id" => ["value" => $id],
-  "nombre" => ["value" => $modelo[PAS_NOMBRE]],
+  "nombre" => ["value" => $modelo[TALL_NOMBRE]],
  ]);
 });

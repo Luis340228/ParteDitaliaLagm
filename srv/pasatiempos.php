@@ -8,13 +8,13 @@ require_once __DIR__ . "/TABLA_PASATIEMPO.php";
 
 ejecutaServicio(function () {
 
- $lista = select(pdo: Bd::pdo(),  from: PASATIEMPO,  orderBy: PAS_NOMBRE);
+ $lista = select(pdo: Bd::pdo(),  from: TALLA,  orderBy: TALL_NOMBRE);
 
  $render = "";
  foreach ($lista as $modelo) {
-  $encodeId = urlencode($modelo[PAS_ID]);
+  $encodeId = urlencode($modelo[TALL_ID]);
   $id = htmlentities($encodeId);
-  $nombre = htmlentities($modelo[PAS_NOMBRE]);
+  $nombre = htmlentities($modelo[TALL_NOMBRE]);
   $render .=
    "<li>
      <p>
