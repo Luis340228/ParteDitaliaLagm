@@ -64,7 +64,7 @@
 
    <button type="button" onclick="
      if (params.size > 0 && confirm('Confirma la eliminación')) {
-      consumeJson('srv/pasatiempo-elimina.php?' + params)
+      consumeJson('srv/talla-elimina.php?' + params)
        .then(() => location.href = 'index.html')
        .catch(muestraError)
      }">
