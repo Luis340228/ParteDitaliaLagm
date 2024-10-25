@@ -23,7 +23,6 @@ ejecutaServicio(function () {
     </li>";
  }*/
 
- // Obtenemos la lista de tallas de la base de datos
  $lista = select(pdo: Bd::pdo(), from: TALLA, orderBy: TALL_NOMBRE);
 
  $render = "<dl>";
@@ -31,9 +30,8 @@ ejecutaServicio(function () {
      $encodeId = urlencode($modelo[TALL_ID]);
      $id = htmlentities($encodeId);
      $nombre = htmlentities($modelo[TALL_NOMBRE]);
-     $descripcion = htmlentities($modelo[TALL_DESCRIPCION]); // Aquí asumo que hay un campo TALL_DESCRIPCION
+     $descripcion = htmlentities($modelo[TALL_DESCRIPCION]);
 
-     // Construimos la estructura <dl> con <dt> y <dd> para cada campo
      $render .= "
      <dt>Nombre</dt>
      <dd><a href='modifica.html?id=$id'>$nombre</a></dd>
