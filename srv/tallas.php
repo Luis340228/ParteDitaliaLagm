@@ -39,7 +39,8 @@ ejecutaServicio(function () {
      <dd><a href='modifica.html?id=$id'>$nombre</a></dd>
 
      <dt>Descripción</dt>
-     <dd>$descripcion</dd>";
+     <dd>$descripcion</dd>
+     <br>";
  }
  $render .= "</dl>";
 
