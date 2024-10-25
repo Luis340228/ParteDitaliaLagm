@@ -22,7 +22,7 @@
 </head>
 
 <body onload="if (params.size > 0) {
-   consumeJson('srv/pasatiempo.php?' + params)
+   consumeJson('srv/talla.php?' + params)
     .then(respuesta => muestraObjeto(forma, respuesta.body))
     .catch(muestraError)
   }">
